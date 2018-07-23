@@ -1,0 +1,684 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		46DA1C7A2105C20E00FD2D77 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 46DA1C792105C20E00FD2D77 /* AppDelegate.m */; };
+		46DA1C7D2105C20E00FD2D77 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 46DA1C7C2105C20E00FD2D77 /* ViewController.m */; };
+		46DA1C802105C20E00FD2D77 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46DA1C7E2105C20E00FD2D77 /* Main.storyboard */; };
+		46DA1C832105C20E00FD2D77 /* LLNetworkMonitor.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 46DA1C812105C20E00FD2D77 /* LLNetworkMonitor.xcdatamodeld */; };
+		46DA1C852105C20E00FD2D77 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46DA1C842105C20E00FD2D77 /* Assets.xcassets */; };
+		46DA1C882105C20E00FD2D77 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46DA1C862105C20E00FD2D77 /* LaunchScreen.storyboard */; };
+		46DA1C8B2105C20E00FD2D77 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 46DA1C8A2105C20E00FD2D77 /* main.m */; };
+		46DA1C952105C20E00FD2D77 /* LLNetworkMonitorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 46DA1C942105C20E00FD2D77 /* LLNetworkMonitorTests.m */; };
+		46DA1CA02105C20E00FD2D77 /* LLNetworkMonitorUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 46DA1C9F2105C20E00FD2D77 /* LLNetworkMonitorUITests.m */; };
+		B5294D2014B3E27A675DB4CF /* libPods-LLNetworkMonitor.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A7EC67D5502B74C4FE4A9F4A /* libPods-LLNetworkMonitor.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		46DA1C912105C20E00FD2D77 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 46DA1C6D2105C20D00FD2D77 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 46DA1C742105C20D00FD2D77;
+			remoteInfo = LLNetworkMonitor;
+		};
+		46DA1C9C2105C20E00FD2D77 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 46DA1C6D2105C20D00FD2D77 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 46DA1C742105C20D00FD2D77;
+			remoteInfo = LLNetworkMonitor;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		20DF257D7C0F3B6A2F4CE3AF /* Pods-LLNetworkMonitor.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LLNetworkMonitor.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LLNetworkMonitor/Pods-LLNetworkMonitor.debug.xcconfig"; sourceTree = "<group>"; };
+		46DA1C752105C20D00FD2D77 /* LLNetworkMonitor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LLNetworkMonitor.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		46DA1C782105C20D00FD2D77 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		46DA1C792105C20E00FD2D77 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		46DA1C7B2105C20E00FD2D77 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		46DA1C7C2105C20E00FD2D77 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		46DA1C7F2105C20E00FD2D77 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		46DA1C822105C20E00FD2D77 /* LLNetworkMonitor.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LLNetworkMonitor.xcdatamodel; sourceTree = "<group>"; };
+		46DA1C842105C20E00FD2D77 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		46DA1C872105C20E00FD2D77 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		46DA1C892105C20E00FD2D77 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		46DA1C8A2105C20E00FD2D77 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		46DA1C902105C20E00FD2D77 /* LLNetworkMonitorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LLNetworkMonitorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		46DA1C942105C20E00FD2D77 /* LLNetworkMonitorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LLNetworkMonitorTests.m; sourceTree = "<group>"; };
+		46DA1C962105C20E00FD2D77 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		46DA1C9B2105C20E00FD2D77 /* LLNetworkMonitorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LLNetworkMonitorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		46DA1C9F2105C20E00FD2D77 /* LLNetworkMonitorUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LLNetworkMonitorUITests.m; sourceTree = "<group>"; };
+		46DA1CA12105C20E00FD2D77 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A7EC67D5502B74C4FE4A9F4A /* libPods-LLNetworkMonitor.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LLNetworkMonitor.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E05D12FEC979BB93308C7C69 /* Pods-LLNetworkMonitor.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LLNetworkMonitor.release.xcconfig"; path = "Pods/Target Support Files/Pods-LLNetworkMonitor/Pods-LLNetworkMonitor.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		46DA1C722105C20D00FD2D77 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5294D2014B3E27A675DB4CF /* libPods-LLNetworkMonitor.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46DA1C8D2105C20E00FD2D77 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46DA1C982105C20E00FD2D77 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		46DA1C6C2105C20D00FD2D77 = {
+			isa = PBXGroup;
+			children = (
+				46DA1C772105C20D00FD2D77 /* LLNetworkMonitor */,
+				46DA1C932105C20E00FD2D77 /* LLNetworkMonitorTests */,
+				46DA1C9E2105C20E00FD2D77 /* LLNetworkMonitorUITests */,
+				46DA1C762105C20D00FD2D77 /* Products */,
+				DDFEBFC46F844AE19DB90D54 /* Pods */,
+				F89123394DDB65DF5FBF398D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		46DA1C762105C20D00FD2D77 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				46DA1C752105C20D00FD2D77 /* LLNetworkMonitor.app */,
+				46DA1C902105C20E00FD2D77 /* LLNetworkMonitorTests.xctest */,
+				46DA1C9B2105C20E00FD2D77 /* LLNetworkMonitorUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		46DA1C772105C20D00FD2D77 /* LLNetworkMonitor */ = {
+			isa = PBXGroup;
+			children = (
+				46DA1C782105C20D00FD2D77 /* AppDelegate.h */,
+				46DA1C792105C20E00FD2D77 /* AppDelegate.m */,
+				46DA1C7B2105C20E00FD2D77 /* ViewController.h */,
+				46DA1C7C2105C20E00FD2D77 /* ViewController.m */,
+				46DA1C7E2105C20E00FD2D77 /* Main.storyboard */,
+				46DA1C842105C20E00FD2D77 /* Assets.xcassets */,
+				46DA1C862105C20E00FD2D77 /* LaunchScreen.storyboard */,
+				46DA1C892105C20E00FD2D77 /* Info.plist */,
+				46DA1C8A2105C20E00FD2D77 /* main.m */,
+				46DA1C812105C20E00FD2D77 /* LLNetworkMonitor.xcdatamodeld */,
+			);
+			path = LLNetworkMonitor;
+			sourceTree = "<group>";
+		};
+		46DA1C932105C20E00FD2D77 /* LLNetworkMonitorTests */ = {
+			isa = PBXGroup;
+			children = (
+				46DA1C942105C20E00FD2D77 /* LLNetworkMonitorTests.m */,
+				46DA1C962105C20E00FD2D77 /* Info.plist */,
+			);
+			path = LLNetworkMonitorTests;
+			sourceTree = "<group>";
+		};
+		46DA1C9E2105C20E00FD2D77 /* LLNetworkMonitorUITests */ = {
+			isa = PBXGroup;
+			children = (
+				46DA1C9F2105C20E00FD2D77 /* LLNetworkMonitorUITests.m */,
+				46DA1CA12105C20E00FD2D77 /* Info.plist */,
+			);
+			path = LLNetworkMonitorUITests;
+			sourceTree = "<group>";
+		};
+		DDFEBFC46F844AE19DB90D54 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				20DF257D7C0F3B6A2F4CE3AF /* Pods-LLNetworkMonitor.debug.xcconfig */,
+				E05D12FEC979BB93308C7C69 /* Pods-LLNetworkMonitor.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F89123394DDB65DF5FBF398D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A7EC67D5502B74C4FE4A9F4A /* libPods-LLNetworkMonitor.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		46DA1C742105C20D00FD2D77 /* LLNetworkMonitor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 46DA1CA42105C20E00FD2D77 /* Build configuration list for PBXNativeTarget "LLNetworkMonitor" */;
+			buildPhases = (
+				BC017184E7E57D11AAF4C573 /* [CP] Check Pods Manifest.lock */,
+				46DA1C712105C20D00FD2D77 /* Sources */,
+				46DA1C722105C20D00FD2D77 /* Frameworks */,
+				46DA1C732105C20D00FD2D77 /* Resources */,
+				02B70D78ADA5D1F33CDFBDD9 /* [CP] Embed Pods Frameworks */,
+				14B02CF181BD6EB3643885B5 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LLNetworkMonitor;
+			productName = LLNetworkMonitor;
+			productReference = 46DA1C752105C20D00FD2D77 /* LLNetworkMonitor.app */;
+			productType = "com.apple.product-type.application";
+		};
+		46DA1C8F2105C20E00FD2D77 /* LLNetworkMonitorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 46DA1CA72105C20E00FD2D77 /* Build configuration list for PBXNativeTarget "LLNetworkMonitorTests" */;
+			buildPhases = (
+				46DA1C8C2105C20E00FD2D77 /* Sources */,
+				46DA1C8D2105C20E00FD2D77 /* Frameworks */,
+				46DA1C8E2105C20E00FD2D77 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				46DA1C922105C20E00FD2D77 /* PBXTargetDependency */,
+			);
+			name = LLNetworkMonitorTests;
+			productName = LLNetworkMonitorTests;
+			productReference = 46DA1C902105C20E00FD2D77 /* LLNetworkMonitorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		46DA1C9A2105C20E00FD2D77 /* LLNetworkMonitorUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 46DA1CAA2105C20E00FD2D77 /* Build configuration list for PBXNativeTarget "LLNetworkMonitorUITests" */;
+			buildPhases = (
+				46DA1C972105C20E00FD2D77 /* Sources */,
+				46DA1C982105C20E00FD2D77 /* Frameworks */,
+				46DA1C992105C20E00FD2D77 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				46DA1C9D2105C20E00FD2D77 /* PBXTargetDependency */,
+			);
+			name = LLNetworkMonitorUITests;
+			productName = LLNetworkMonitorUITests;
+			productReference = 46DA1C9B2105C20E00FD2D77 /* LLNetworkMonitorUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		46DA1C6D2105C20D00FD2D77 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = diqidaimu;
+				TargetAttributes = {
+					46DA1C742105C20D00FD2D77 = {
+						CreatedOnToolsVersion = 9.4;
+					};
+					46DA1C8F2105C20E00FD2D77 = {
+						CreatedOnToolsVersion = 9.4;
+						TestTargetID = 46DA1C742105C20D00FD2D77;
+					};
+					46DA1C9A2105C20E00FD2D77 = {
+						CreatedOnToolsVersion = 9.4;
+						TestTargetID = 46DA1C742105C20D00FD2D77;
+					};
+				};
+			};
+			buildConfigurationList = 46DA1C702105C20D00FD2D77 /* Build configuration list for PBXProject "LLNetworkMonitor" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 46DA1C6C2105C20D00FD2D77;
+			productRefGroup = 46DA1C762105C20D00FD2D77 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				46DA1C742105C20D00FD2D77 /* LLNetworkMonitor */,
+				46DA1C8F2105C20E00FD2D77 /* LLNetworkMonitorTests */,
+				46DA1C9A2105C20E00FD2D77 /* LLNetworkMonitorUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		46DA1C732105C20D00FD2D77 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46DA1C882105C20E00FD2D77 /* LaunchScreen.storyboard in Resources */,
+				46DA1C852105C20E00FD2D77 /* Assets.xcassets in Resources */,
+				46DA1C802105C20E00FD2D77 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46DA1C8E2105C20E00FD2D77 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46DA1C992105C20E00FD2D77 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		02B70D78ADA5D1F33CDFBDD9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LLNetworkMonitor/Pods-LLNetworkMonitor-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		14B02CF181BD6EB3643885B5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LLNetworkMonitor/Pods-LLNetworkMonitor-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BC017184E7E57D11AAF4C573 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LLNetworkMonitor-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		46DA1C712105C20D00FD2D77 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46DA1C7D2105C20E00FD2D77 /* ViewController.m in Sources */,
+				46DA1C832105C20E00FD2D77 /* LLNetworkMonitor.xcdatamodeld in Sources */,
+				46DA1C8B2105C20E00FD2D77 /* main.m in Sources */,
+				46DA1C7A2105C20E00FD2D77 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46DA1C8C2105C20E00FD2D77 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46DA1C952105C20E00FD2D77 /* LLNetworkMonitorTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46DA1C972105C20E00FD2D77 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46DA1CA02105C20E00FD2D77 /* LLNetworkMonitorUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		46DA1C922105C20E00FD2D77 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 46DA1C742105C20D00FD2D77 /* LLNetworkMonitor */;
+			targetProxy = 46DA1C912105C20E00FD2D77 /* PBXContainerItemProxy */;
+		};
+		46DA1C9D2105C20E00FD2D77 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 46DA1C742105C20D00FD2D77 /* LLNetworkMonitor */;
+			targetProxy = 46DA1C9C2105C20E00FD2D77 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		46DA1C7E2105C20E00FD2D77 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				46DA1C7F2105C20E00FD2D77 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		46DA1C862105C20E00FD2D77 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				46DA1C872105C20E00FD2D77 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		46DA1CA22105C20E00FD2D77 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		46DA1CA32105C20E00FD2D77 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		46DA1CA52105C20E00FD2D77 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 20DF257D7C0F3B6A2F4CE3AF /* Pods-LLNetworkMonitor.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = Y688PQN5Q4;
+				INFOPLIST_FILE = LLNetworkMonitor/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = liguanwen.LLNetworkMonitor;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "f1784eb6-18bf-48b7-8c22-086e5a16e68e";
+				PROVISIONING_PROFILE_SPECIFIER = "iOS Wildcard App Development";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		46DA1CA62105C20E00FD2D77 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E05D12FEC979BB93308C7C69 /* Pods-LLNetworkMonitor.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = LLNetworkMonitor/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = liguanwen.LLNetworkMonitor;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		46DA1CA82105C20E00FD2D77 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C6Z4D9LT34;
+				INFOPLIST_FILE = LLNetworkMonitorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = liguanwen.LLNetworkMonitorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LLNetworkMonitor.app/LLNetworkMonitor";
+			};
+			name = Debug;
+		};
+		46DA1CA92105C20E00FD2D77 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C6Z4D9LT34;
+				INFOPLIST_FILE = LLNetworkMonitorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = liguanwen.LLNetworkMonitorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LLNetworkMonitor.app/LLNetworkMonitor";
+			};
+			name = Release;
+		};
+		46DA1CAB2105C20E00FD2D77 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C6Z4D9LT34;
+				INFOPLIST_FILE = LLNetworkMonitorUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = liguanwen.LLNetworkMonitorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LLNetworkMonitor;
+			};
+			name = Debug;
+		};
+		46DA1CAC2105C20E00FD2D77 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C6Z4D9LT34;
+				INFOPLIST_FILE = LLNetworkMonitorUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = liguanwen.LLNetworkMonitorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LLNetworkMonitor;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		46DA1C702105C20D00FD2D77 /* Build configuration list for PBXProject "LLNetworkMonitor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46DA1CA22105C20E00FD2D77 /* Debug */,
+				46DA1CA32105C20E00FD2D77 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		46DA1CA42105C20E00FD2D77 /* Build configuration list for PBXNativeTarget "LLNetworkMonitor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46DA1CA52105C20E00FD2D77 /* Debug */,
+				46DA1CA62105C20E00FD2D77 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		46DA1CA72105C20E00FD2D77 /* Build configuration list for PBXNativeTarget "LLNetworkMonitorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46DA1CA82105C20E00FD2D77 /* Debug */,
+				46DA1CA92105C20E00FD2D77 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		46DA1CAA2105C20E00FD2D77 /* Build configuration list for PBXNativeTarget "LLNetworkMonitorUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46DA1CAB2105C20E00FD2D77 /* Debug */,
+				46DA1CAC2105C20E00FD2D77 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		46DA1C812105C20E00FD2D77 /* LLNetworkMonitor.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				46DA1C822105C20E00FD2D77 /* LLNetworkMonitor.xcdatamodel */,
+			);
+			currentVersion = 46DA1C822105C20E00FD2D77 /* LLNetworkMonitor.xcdatamodel */;
+			path = LLNetworkMonitor.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 46DA1C6D2105C20D00FD2D77 /* Project object */;
+}
