@@ -30,6 +30,7 @@
     //注册通知
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(networkChanged:) name:LLNetworkMonitorChangedNotification object:nil];
 
+    [self networkChanged:nil];
     // 发起一个网络请求以触发系统的弹框
     
     NSURL *url = [NSURL URLWithString:@"http://api.m.taobao.com/rest/api3.do?api=mtop.common.getTimestamp"];
