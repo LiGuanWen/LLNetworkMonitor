@@ -254,19 +254,20 @@ static void ReachabilityCallback(SCNetworkReachabilityRef target, SCNetworkReach
             return  wifiEnable     ? LLNetworkTypeWiFi :
             cellularEnable ? LLNetworkTypeCellularData : LLNetworkTypeOffline;
         } else { // 传统的 statusBar
-            NSArray *children = [[statusBar valueForKeyPath:@"foregroundView"] subviews];
-            for (id child in children) {
-                if ([child isKindOfClass:[NSClassFromString(@"UIStatusBarDataNetworkItemView") class]]) {
-                    type = [[child valueForKeyPath:@"dataNetworkType"] intValue];
-                    // type == 1  => 2G
-                    // type == 2  => 3G
-                    // type == 3  => 4G
-                    // type == 4  => LTE
-                    // type == 5  => Wi-Fi
-                }
-            }
-            return type == 0 ? LLNetworkTypeOffline :
-            type == 5 ? LLNetworkTypeWiFi    : LLNetworkTypeCellularData;
+//            NSArray *children = [[statusBar valueForKeyPath:@"foregroundView"] subviews];
+//            for (id child in children) {
+//                if ([child isKindOfClass:[NSClassFromString(@"UIStatusBarDataNetworkItemView") class]]) {
+//                    type = [[child valueForKeyPath:@"dataNetworkType"] intValue];
+//                    // type == 1  => 2G
+//                    // type == 2  => 3G
+//                    // type == 3  => 4G
+//                    // type == 4  => LTE
+//                    // type == 5  => Wi-Fi
+//                }
+//            }
+//            return type == 0 ? LLNetworkTypeOffline :
+//            type == 5 ? LLNetworkTypeWiFi    : LLNetworkTypeCellularData;
+            type = LLNetworkTypeWiFi;
         }
     } @catch (NSException *exception) {
         
