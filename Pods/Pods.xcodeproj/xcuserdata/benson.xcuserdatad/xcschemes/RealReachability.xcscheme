@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "8CB26B86F815B21A08176E7DCEA858B8"
-               BlueprintName = "LLNetworkMonitor"
+               BlueprintIdentifier = "60B1886825C62A64A852CC4CE7588E55"
+               BlueprintName = "RealReachability"
                ReferencedContainer = "container:Pods.xcodeproj"
-               BuildableName = "libLLNetworkMonitor.a">
+               BuildableName = "libRealReachability.a">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

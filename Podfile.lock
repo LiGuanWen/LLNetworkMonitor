@@ -1,16 +1,24 @@
 PODS:
-  - LLNetworkMonitor (1.0)
+  - LLNetworkMonitor (1.0):
+    - RealReachability
+  - RealReachability (1.3.0):
+    - RealReachability/Connection (= 1.3.0)
+    - RealReachability/Ping (= 1.3.0)
+  - RealReachability/Connection (1.3.0)
+  - RealReachability/Ping (1.3.0)
 
 DEPENDENCIES:
   - LLNetworkMonitor (from `.`)
+  - RealReachability
 
 EXTERNAL SOURCES:
   LLNetworkMonitor:
     :path: .
 
 SPEC CHECKSUMS:
-  LLNetworkMonitor: f7d6dffdd837e1166a7341cbb086b67b06c27230
+  LLNetworkMonitor: c1a5ed616008e186ae2f83a3d27f6dac236fa60f
+  RealReachability: eae9c58d2db52fadd8e1cba4b5d4c028454fbc47
 
-PODFILE CHECKSUM: c47f50f2c08ece4c53ece37d21e6a784647a9802
+PODFILE CHECKSUM: fe3d9f27ef8d7be6c60de086c9d5f68ad215dedd
 
 COCOAPODS: 1.3.1

@@ -16,6 +16,8 @@
 #import <sys/socket.h>
 #import <netinet/in.h>
 
+#import <RealReachability/RealReachability.h>
+
 
 NSString * const LLNetworkMonitorChangedNotification = @"LLNetworkMonitorChangedNotification";
 
@@ -39,7 +41,7 @@ NSString * const LLNetworkMonitorChangedNotification = @"LLNetworkMonitorChanged
  开启网络监测
  */
 + (void)beginUseNetworkMonitor{
-       [LLNetworkMonitor sharedInstance];
+    [LLNetworkMonitor sharedInstance];
 }
 + (void)setAlertEnable:(BOOL)setAlertEnable {
     [self sharedInstance]->_automaticallyAlert = setAlertEnable;
@@ -193,7 +195,6 @@ static void ReachabilityCallback(SCNetworkReachabilityRef target, SCNetworkReach
     CTCellularDataRestrictedState state = _cellularData.restrictedState;
     switch (state) {
         case kCTCellularDataRestricted: {// 系统 API 返回 无蜂窝数据访问权限
-     
             [self getCurrentNetworkType:^(LLNetworkType type) {
                 /*  若用户是通过蜂窝数据 或 WLAN 上网，走到这里来 说明权限被关闭**/
                 if (type == LLNetworkTypeCellularData || type == LLNetworkTypeWiFi) {
@@ -218,7 +219,7 @@ static void ReachabilityCallback(SCNetworkReachabilityRef target, SCNetworkReach
 
 /**
  获取当前网络
-
+ 
  @param block 网络类型
  */
 - (void)getCurrentNetworkType:(void(^)(LLNetworkType))block {
@@ -239,35 +240,32 @@ static void ReachabilityCallback(SCNetworkReachabilityRef target, SCNetworkReach
 - (LLNetworkType)getNetworkTypeFromStatusBar {
     NSInteger type = 0;
     @try {
-        UIApplication *app = [UIApplication sharedApplication];
-        UIView *statusBar = [app valueForKeyPath:@"statusBar"];
-        if (statusBar == nil ){
-            return LLNetworkTypeUnknown;
-        }
-        BOOL isModernStatusBar = [statusBar isKindOfClass:NSClassFromString(@"UIStatusBar_Modern")];
-        
-        if (isModernStatusBar) { // 在 iPhone X 上 statusBar 属于 UIStatusBar_Modern ，需要特殊处理
-            id currentData = [statusBar valueForKeyPath:@"statusBar.currentData"];
-            BOOL wifiEnable = [[currentData valueForKeyPath:@"_wifiEntry.isEnabled"] boolValue];
-            // 这里不能用 _cellularEntry.isEnabled 来判断，该值即使关闭仍然有是 YES
-            BOOL cellularEnable = [[currentData valueForKeyPath:@"_cellularEntry.type"] boolValue];
-            return  wifiEnable     ? LLNetworkTypeWiFi :
-            cellularEnable ? LLNetworkTypeCellularData : LLNetworkTypeOffline;
-        } else { // 传统的 statusBar
-//            NSArray *children = [[statusBar valueForKeyPath:@"foregroundView"] subviews];
-//            for (id child in children) {
-//                if ([child isKindOfClass:[NSClassFromString(@"UIStatusBarDataNetworkItemView") class]]) {
-//                    type = [[child valueForKeyPath:@"dataNetworkType"] intValue];
-//                    // type == 1  => 2G
-//                    // type == 2  => 3G
-//                    // type == 3  => 4G
-//                    // type == 4  => LTE
-//                    // type == 5  => Wi-Fi
-//                }
-//            }
-//            return type == 0 ? LLNetworkTypeOffline :
-//            type == 5 ? LLNetworkTypeWiFi    : LLNetworkTypeCellularData;
-            type = LLNetworkTypeWiFi;
+        GLobalRealReachability.hostForPing = @"www.baidu.com";
+        [GLobalRealReachability startNotifier];
+        //        RealStatusUnknown = -1,
+        //        RealStatusNotReachable = 0,
+        //        RealStatusViaWWAN = 1,
+        //        RealStatusViaWiFi = 2
+        ReachabilityStatus status = [GLobalRealReachability currentReachabilityStatus];
+        //        LLNetworkTypeUnknown ,             //未知
+        //        LLNetworkTypeOffline ,             //关闭
+        //        LLNetworkTypeWiFi    ,             //WiFi
+        //        LLNetworkTypeCellularData ,        //数据流量
+        switch (status) {
+            case RealStatusUnknown:
+                return LLNetworkTypeUnknown;
+                break;
+            case RealStatusNotReachable:
+                return LLNetworkTypeOffline;
+                break;
+            case RealStatusViaWWAN:
+                return LLNetworkTypeCellularData;
+                break;
+            case RealStatusViaWiFi:
+                return LLNetworkTypeWiFi;
+                break;
+            default:
+                break;
         }
     } @catch (NSException *exception) {
         

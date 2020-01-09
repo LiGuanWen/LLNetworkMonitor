@@ -7,49 +7,125 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3CB6504718FFE028C31D681C6C66C839 /* LLNetworkMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 33D452B116BC9DCAA4CB8F049B44EBA9 /* LLNetworkMonitor.m */; };
-		5E6B9D640B13072BAA60FDC91F4C038F /* LLNetworkMonitor-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 46BA33AEE5076842FC7BE56E410F97DE /* LLNetworkMonitor-dummy.m */; };
-		940ABA43E06FEDA20F9EF5EA0FDAA8FC /* Pods-LLNetworkMonitor-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C31D8733C17A0101E905403960914C82 /* Pods-LLNetworkMonitor-dummy.m */; };
-		9986FC61E3CFF3BE3EFC3C6ADD9AFBF8 /* LLNetworkMonitor.h in Headers */ = {isa = PBXBuildFile; fileRef = 06E6B38334665E6F3B8A122234644DF0 /* LLNetworkMonitor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		13838E8D8DF427C962D3B9821112D0FD /* LLNetworkMonitor.h in Headers */ = {isa = PBXBuildFile; fileRef = 06E6B38334665E6F3B8A122234644DF0 /* LLNetworkMonitor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		185281D411AF31B0ADB92ABF3F63A3D0 /* LocalConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = FFCC9ADDB3A8443DC02D1D8E4C5DB112 /* LocalConnection.m */; };
+		1A2D82223A4E80BD3C28CDDB38B05523 /* ReachStateUnReachable.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C2A9D63D42C23273F54B702E009482E /* ReachStateUnReachable.m */; };
+		1F7C889D10FF5821D60D8DAA8F2AC8B6 /* ReachStateWIFI.m in Sources */ = {isa = PBXBuildFile; fileRef = BB7E070A48C528C4202FAD8573C05B56 /* ReachStateWIFI.m */; };
+		27342FEB86FF05499C9FA2312E624815 /* ReachStateWWAN.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C247C1453046AD40A8552C904CD37E1 /* ReachStateWWAN.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		2C3E0264A51A30A39BED1D6B8FC79740 /* Pods-LLNetworkMonitor-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C31D8733C17A0101E905403960914C82 /* Pods-LLNetworkMonitor-dummy.m */; };
+		3F055CA9B27BDB723CF0BC797926D7FA /* FSMEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D37BB4A9CF0D643B06665A42E278B52 /* FSMEngine.m */; };
+		402DA8ED3D660A6CA32A3CCBCCC60A33 /* FSMEngine.h in Headers */ = {isa = PBXBuildFile; fileRef = 6768556518CDF2F5B5C166F97E6ED1D2 /* FSMEngine.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		448F3686F949F02EC6CC293EA795973C /* LLNetworkMonitor-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 46BA33AEE5076842FC7BE56E410F97DE /* LLNetworkMonitor-dummy.m */; };
+		4D1EB697AE923E0FB3E0B25543879F87 /* PingFoundation.h in Headers */ = {isa = PBXBuildFile; fileRef = 82753DE5DC6E65E4566A0E847986E7BD /* PingFoundation.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		54BFF56A591549D7145CF46F458FFCF3 /* ReachState.m in Sources */ = {isa = PBXBuildFile; fileRef = D972B491B8117D8A1AAD5A9DC9B3BD2B /* ReachState.m */; };
+		5559D00778C523C8AB8BB028C0B6FAFB /* RealReachability-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 532CE383234EBF0B59ED071421D44580 /* RealReachability-dummy.m */; };
+		64B8937E2CD40D0660F8B2673A3718F1 /* ReachState.h in Headers */ = {isa = PBXBuildFile; fileRef = 410A85D4214800F7A7B6F75B4434F2D3 /* ReachState.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		67885317CF6745B3E6793683D937DD76 /* FSMDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = 80E3A33E3177EA30DCB74D153C7CAE04 /* FSMDefines.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		76115AF5C7A8E7BC1E83651CB7476937 /* ReachStateLoading.m in Sources */ = {isa = PBXBuildFile; fileRef = 4021E27CDB89464EC670A7162382CCF0 /* ReachStateLoading.m */; };
+		7723372C37CBF8A65E48DCBC8A411D6D /* ReachStateUnloaded.m in Sources */ = {isa = PBXBuildFile; fileRef = A54F9FB0D429C46CDC7F2ACF1F7BAFC9 /* ReachStateUnloaded.m */; };
+		7C741A98578A32B370A4E1D3C79FEDB4 /* LocalConnection.h in Headers */ = {isa = PBXBuildFile; fileRef = 87335D8CCB11C663BA9269549D659E19 /* LocalConnection.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7D6D85052AA36BBF9ED08A319767C6ED /* FSMStateUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 45FB4FF028BA76F131C89890C489A2FA /* FSMStateUtil.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		7E13C2211B55E9CBC08153EF45C03582 /* LLNetworkMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 33D452B116BC9DCAA4CB8F049B44EBA9 /* LLNetworkMonitor.m */; };
+		8C2F25D44C2E5AF9D3EAB6417907EFEE /* PingFoundation.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E792870753AE4AEBA7C9D371F57A16D /* PingFoundation.m */; };
+		C18E8FCF51BA9B981471F07A075BC315 /* ReachStateUnReachable.h in Headers */ = {isa = PBXBuildFile; fileRef = 6DC5062C3373B110AB641209F0F18426 /* ReachStateUnReachable.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C488A4634738E460A3E06B9E456821A6 /* PingHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 156DF2B214913EFDA12088492AC9A348 /* PingHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C808D98ED1A8D6C323320F5B30D9F7E7 /* ReachStateUnloaded.h in Headers */ = {isa = PBXBuildFile; fileRef = 0B6893DB38D51E826A595DEC11850396 /* ReachStateUnloaded.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		CF9FB7F04E33D80778E7349E93C7C6F2 /* RealReachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A722472CD8832217D6CCEBF87FCAEA7 /* RealReachability.m */; };
+		D97EDBE9ED660A558A51D3098E2FE0AF /* PingHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = AF419EDBD3B8F95DD481234EC7A1D835 /* PingHelper.m */; };
+		DEB4D73055A16C54CD856E1E1948257B /* ReachStateLoading.h in Headers */ = {isa = PBXBuildFile; fileRef = A4B7677E9AD4B502781E58A04B7F9D38 /* ReachStateLoading.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		DF5F9B3302EB9FD4394D8CBA35B2A4E3 /* ReachStateWIFI.h in Headers */ = {isa = PBXBuildFile; fileRef = ADDBEF31DAF4DB99A1185552FBE34252 /* ReachStateWIFI.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		EBAFCA457414FB5B42C87D3C17C732F5 /* FSMStateUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = EE562CFA4718CC99AD42015A9D4865EF /* FSMStateUtil.m */; };
+		F61B91E8167F7ADBE23FA9F67C6D11F5 /* RealReachability.h in Headers */ = {isa = PBXBuildFile; fileRef = 89AB7C900E648E06FE1F130E3BDA6A1C /* RealReachability.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FDAFB9A78B0DBF2D7A4F216ECE939797 /* ReachStateWWAN.m in Sources */ = {isa = PBXBuildFile; fileRef = A8EB8D436B2FA59914A820014F299B39 /* ReachStateWWAN.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		BDFC285DBEA3C7928784A912903321FD /* PBXContainerItemProxy */ = {
+		0A6AAE63A301086FA2FEC0669239FCDF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 8A4AD2049C8BDD258A218AD04FEFB905;
+			remoteGlobalIDString = 60B1886825C62A64A852CC4CE7588E55;
+			remoteInfo = RealReachability;
+		};
+		2BFF7AED77DE48B1E8B9A92EB43BEE6E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 60B1886825C62A64A852CC4CE7588E55;
+			remoteInfo = RealReachability;
+		};
+		E667AA57199CD1E9C82B678836922C34 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8CB26B86F815B21A08176E7DCEA858B8;
 			remoteInfo = LLNetworkMonitor;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		06E6B38334665E6F3B8A122234644DF0 /* LLNetworkMonitor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LLNetworkMonitor.h; path = LLNetworkMonitorClass/LLNetworkMonitor.h; sourceTree = "<group>"; };
+		0B6893DB38D51E826A595DEC11850396 /* ReachStateUnloaded.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ReachStateUnloaded.h; path = RealReachability/FSM/ReachStateUnloaded.h; sourceTree = "<group>"; };
 		150A5A44902285BA4DD951E296C5184F /* Pods-LLNetworkMonitor-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LLNetworkMonitor-resources.sh"; sourceTree = "<group>"; };
-		1B21E532D6BAAB0116C44BC7A064A706 /* libPods-LLNetworkMonitor.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-LLNetworkMonitor.a"; path = "libPods-LLNetworkMonitor.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		156DF2B214913EFDA12088492AC9A348 /* PingHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PingHelper.h; path = RealReachability/Ping/PingHelper.h; sourceTree = "<group>"; };
 		2F8F571FE1FAEFC425FE1C7A2425BCEC /* Pods-LLNetworkMonitor-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LLNetworkMonitor-acknowledgements.markdown"; sourceTree = "<group>"; };
+		3355D7D263E6AB9C3BC6A5864F42732D /* libRealReachability.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libRealReachability.a; path = libRealReachability.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		33D452B116BC9DCAA4CB8F049B44EBA9 /* LLNetworkMonitor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LLNetworkMonitor.m; path = LLNetworkMonitorClass/LLNetworkMonitor.m; sourceTree = "<group>"; };
 		34F8493213966E4C16F7E764323D0AA8 /* Pods-LLNetworkMonitor.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LLNetworkMonitor.release.xcconfig"; sourceTree = "<group>"; };
 		3E11831E6F0261568835E4FB4086CB11 /* Pods-LLNetworkMonitor-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LLNetworkMonitor-acknowledgements.plist"; sourceTree = "<group>"; };
+		4021E27CDB89464EC670A7162382CCF0 /* ReachStateLoading.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ReachStateLoading.m; path = RealReachability/FSM/ReachStateLoading.m; sourceTree = "<group>"; };
+		410A85D4214800F7A7B6F75B4434F2D3 /* ReachState.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ReachState.h; path = RealReachability/FSM/ReachState.h; sourceTree = "<group>"; };
+		45FB4FF028BA76F131C89890C489A2FA /* FSMStateUtil.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSMStateUtil.h; path = RealReachability/FSM/FSMStateUtil.h; sourceTree = "<group>"; };
 		46BA33AEE5076842FC7BE56E410F97DE /* LLNetworkMonitor-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LLNetworkMonitor-dummy.m"; sourceTree = "<group>"; };
 		4E344541EAE483BB56AE77F190660ADC /* LLNetworkMonitor.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LLNetworkMonitor.xcconfig; sourceTree = "<group>"; };
+		532CE383234EBF0B59ED071421D44580 /* RealReachability-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "RealReachability-dummy.m"; sourceTree = "<group>"; };
+		5C247C1453046AD40A8552C904CD37E1 /* ReachStateWWAN.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ReachStateWWAN.h; path = RealReachability/FSM/ReachStateWWAN.h; sourceTree = "<group>"; };
 		5C87B65247910EEE1F783884B800C44B /* LLNetworkMonitor-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LLNetworkMonitor-prefix.pch"; sourceTree = "<group>"; };
+		5E792870753AE4AEBA7C9D371F57A16D /* PingFoundation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PingFoundation.m; path = RealReachability/Ping/PingFoundation.m; sourceTree = "<group>"; };
+		6768556518CDF2F5B5C166F97E6ED1D2 /* FSMEngine.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSMEngine.h; path = RealReachability/FSM/FSMEngine.h; sourceTree = "<group>"; };
+		6A722472CD8832217D6CCEBF87FCAEA7 /* RealReachability.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RealReachability.m; path = RealReachability/RealReachability.m; sourceTree = "<group>"; };
+		6D37BB4A9CF0D643B06665A42E278B52 /* FSMEngine.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSMEngine.m; path = RealReachability/FSM/FSMEngine.m; sourceTree = "<group>"; };
+		6DC5062C3373B110AB641209F0F18426 /* ReachStateUnReachable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ReachStateUnReachable.h; path = RealReachability/FSM/ReachStateUnReachable.h; sourceTree = "<group>"; };
 		748B1398043C0955C96A2AF278DC3D7A /* Pods-LLNetworkMonitor-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LLNetworkMonitor-frameworks.sh"; sourceTree = "<group>"; };
+		780DABE158EE1CB0A47B7244141F3180 /* RealReachability-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RealReachability-prefix.pch"; sourceTree = "<group>"; };
+		7C2A9D63D42C23273F54B702E009482E /* ReachStateUnReachable.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ReachStateUnReachable.m; path = RealReachability/FSM/ReachStateUnReachable.m; sourceTree = "<group>"; };
+		80E3A33E3177EA30DCB74D153C7CAE04 /* FSMDefines.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSMDefines.h; path = RealReachability/FSM/FSMDefines.h; sourceTree = "<group>"; };
+		82753DE5DC6E65E4566A0E847986E7BD /* PingFoundation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PingFoundation.h; path = RealReachability/Ping/PingFoundation.h; sourceTree = "<group>"; };
+		87335D8CCB11C663BA9269549D659E19 /* LocalConnection.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LocalConnection.h; path = RealReachability/Connection/LocalConnection.h; sourceTree = "<group>"; };
 		89577F8D00F94AC30C4A9BDE210DD829 /* Pods-LLNetworkMonitor.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LLNetworkMonitor.debug.xcconfig"; sourceTree = "<group>"; };
+		89AB7C900E648E06FE1F130E3BDA6A1C /* RealReachability.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RealReachability.h; path = RealReachability/RealReachability.h; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9BE2F39CEED532EAA0F6337696F4E3B3 /* RealReachability.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RealReachability.xcconfig; sourceTree = "<group>"; };
+		A4B7677E9AD4B502781E58A04B7F9D38 /* ReachStateLoading.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ReachStateLoading.h; path = RealReachability/FSM/ReachStateLoading.h; sourceTree = "<group>"; };
+		A54F9FB0D429C46CDC7F2ACF1F7BAFC9 /* ReachStateUnloaded.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ReachStateUnloaded.m; path = RealReachability/FSM/ReachStateUnloaded.m; sourceTree = "<group>"; };
+		A8EB8D436B2FA59914A820014F299B39 /* ReachStateWWAN.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ReachStateWWAN.m; path = RealReachability/FSM/ReachStateWWAN.m; sourceTree = "<group>"; };
+		ADDBEF31DAF4DB99A1185552FBE34252 /* ReachStateWIFI.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ReachStateWIFI.h; path = RealReachability/FSM/ReachStateWIFI.h; sourceTree = "<group>"; };
+		AF419EDBD3B8F95DD481234EC7A1D835 /* PingHelper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PingHelper.m; path = RealReachability/Ping/PingHelper.m; sourceTree = "<group>"; };
+		BB7E070A48C528C4202FAD8573C05B56 /* ReachStateWIFI.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ReachStateWIFI.m; path = RealReachability/FSM/ReachStateWIFI.m; sourceTree = "<group>"; };
+		BE2AFA4A4768E56C7316B85DFA49B09D /* libPods-LLNetworkMonitor.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-LLNetworkMonitor.a"; path = "libPods-LLNetworkMonitor.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0A0CF4874F9B5917A8C9118F58A4665 /* libLLNetworkMonitor.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libLLNetworkMonitor.a; path = libLLNetworkMonitor.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		C31D8733C17A0101E905403960914C82 /* Pods-LLNetworkMonitor-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LLNetworkMonitor-dummy.m"; sourceTree = "<group>"; };
-		EA1186BBA59BD936BF14C395D12A5542 /* libLLNetworkMonitor.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libLLNetworkMonitor.a; path = libLLNetworkMonitor.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D972B491B8117D8A1AAD5A9DC9B3BD2B /* ReachState.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ReachState.m; path = RealReachability/FSM/ReachState.m; sourceTree = "<group>"; };
+		EE562CFA4718CC99AD42015A9D4865EF /* FSMStateUtil.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSMStateUtil.m; path = RealReachability/FSM/FSMStateUtil.m; sourceTree = "<group>"; };
+		FFCC9ADDB3A8443DC02D1D8E4C5DB112 /* LocalConnection.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LocalConnection.m; path = RealReachability/Connection/LocalConnection.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		32A2BAC4847608634479DBFE309760ED /* Frameworks */ = {
+		3E2F64F46995DDED42B4EF0863B978E2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7FBE18C7D24B4ACF7ABC700C1C334653 /* Frameworks */ = {
+		42494189DFA0D0AFF74C0A54F8787B0E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBEEAAB7371EE665D0EFEA02DAE68A14 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -77,13 +153,23 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		3473DA5DC35F32B8093B70ADA653AB13 /* Products */ = {
+		2329E237BF15D86F699AFB9595B683DA /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				EA1186BBA59BD936BF14C395D12A5542 /* libLLNetworkMonitor.a */,
-				1B21E532D6BAAB0116C44BC7A064A706 /* libPods-LLNetworkMonitor.a */,
+				A735020D29EEDE1691F80AB6D40CACC2 /* RealReachability */,
 			);
-			name = Products;
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		375F6A37358F8FF37A27372D3587FD57 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				9BE2F39CEED532EAA0F6337696F4E3B3 /* RealReachability.xcconfig */,
+				532CE383234EBF0B59ED071421D44580 /* RealReachability-dummy.m */,
+				780DABE158EE1CB0A47B7244141F3180 /* RealReachability-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/RealReachability";
 			sourceTree = "<group>";
 		};
 		40D58FDF51678E492A13D7DAA9523D52 /* Development Pods */ = {
@@ -111,9 +197,51 @@
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				40D58FDF51678E492A13D7DAA9523D52 /* Development Pods */,
 				0F8D2E47FE03D3B91B51069F7C273AF4 /* Frameworks */,
-				3473DA5DC35F32B8093B70ADA653AB13 /* Products */,
+				2329E237BF15D86F699AFB9595B683DA /* Pods */,
+				C3A128E64D93B733BE7A38CBC0FD016C /* Products */,
 				D54D6E3DCE77E709E27C3195489C77B2 /* Targets Support Files */,
 			);
+			sourceTree = "<group>";
+		};
+		8045841CCE0B81950C32E21C8DE2CBC2 /* Ping */ = {
+			isa = PBXGroup;
+			children = (
+				82753DE5DC6E65E4566A0E847986E7BD /* PingFoundation.h */,
+				5E792870753AE4AEBA7C9D371F57A16D /* PingFoundation.m */,
+				156DF2B214913EFDA12088492AC9A348 /* PingHelper.h */,
+				AF419EDBD3B8F95DD481234EC7A1D835 /* PingHelper.m */,
+			);
+			name = Ping;
+			sourceTree = "<group>";
+		};
+		A735020D29EEDE1691F80AB6D40CACC2 /* RealReachability */ = {
+			isa = PBXGroup;
+			children = (
+				80E3A33E3177EA30DCB74D153C7CAE04 /* FSMDefines.h */,
+				6768556518CDF2F5B5C166F97E6ED1D2 /* FSMEngine.h */,
+				6D37BB4A9CF0D643B06665A42E278B52 /* FSMEngine.m */,
+				45FB4FF028BA76F131C89890C489A2FA /* FSMStateUtil.h */,
+				EE562CFA4718CC99AD42015A9D4865EF /* FSMStateUtil.m */,
+				410A85D4214800F7A7B6F75B4434F2D3 /* ReachState.h */,
+				D972B491B8117D8A1AAD5A9DC9B3BD2B /* ReachState.m */,
+				A4B7677E9AD4B502781E58A04B7F9D38 /* ReachStateLoading.h */,
+				4021E27CDB89464EC670A7162382CCF0 /* ReachStateLoading.m */,
+				0B6893DB38D51E826A595DEC11850396 /* ReachStateUnloaded.h */,
+				A54F9FB0D429C46CDC7F2ACF1F7BAFC9 /* ReachStateUnloaded.m */,
+				6DC5062C3373B110AB641209F0F18426 /* ReachStateUnReachable.h */,
+				7C2A9D63D42C23273F54B702E009482E /* ReachStateUnReachable.m */,
+				ADDBEF31DAF4DB99A1185552FBE34252 /* ReachStateWIFI.h */,
+				BB7E070A48C528C4202FAD8573C05B56 /* ReachStateWIFI.m */,
+				5C247C1453046AD40A8552C904CD37E1 /* ReachStateWWAN.h */,
+				A8EB8D436B2FA59914A820014F299B39 /* ReachStateWWAN.m */,
+				89AB7C900E648E06FE1F130E3BDA6A1C /* RealReachability.h */,
+				6A722472CD8832217D6CCEBF87FCAEA7 /* RealReachability.m */,
+				DC929E11CCD5314EA228FEDD8F9D548C /* Connection */,
+				8045841CCE0B81950C32E21C8DE2CBC2 /* Ping */,
+				375F6A37358F8FF37A27372D3587FD57 /* Support Files */,
+			);
+			name = RealReachability;
+			path = RealReachability;
 			sourceTree = "<group>";
 		};
 		B9893076556FACB4FD7CEC68C1F717DC /* Pods-LLNetworkMonitor */ = {
@@ -131,6 +259,16 @@
 			path = "Target Support Files/Pods-LLNetworkMonitor";
 			sourceTree = "<group>";
 		};
+		C3A128E64D93B733BE7A38CBC0FD016C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C0A0CF4874F9B5917A8C9118F58A4665 /* libLLNetworkMonitor.a */,
+				BE2AFA4A4768E56C7316B85DFA49B09D /* libPods-LLNetworkMonitor.a */,
+				3355D7D263E6AB9C3BC6A5864F42732D /* libRealReachability.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		D54D6E3DCE77E709E27C3195489C77B2 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -139,52 +277,108 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
+		DC929E11CCD5314EA228FEDD8F9D548C /* Connection */ = {
+			isa = PBXGroup;
+			children = (
+				87335D8CCB11C663BA9269549D659E19 /* LocalConnection.h */,
+				FFCC9ADDB3A8443DC02D1D8E4C5DB112 /* LocalConnection.m */,
+			);
+			name = Connection;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		A89E332FB1CC766655A1EF96D6848578 /* Headers */ = {
+		09BB32775A57762C47F3FCAFFFECC4EE /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9986FC61E3CFF3BE3EFC3C6ADD9AFBF8 /* LLNetworkMonitor.h in Headers */,
+				67885317CF6745B3E6793683D937DD76 /* FSMDefines.h in Headers */,
+				402DA8ED3D660A6CA32A3CCBCCC60A33 /* FSMEngine.h in Headers */,
+				7D6D85052AA36BBF9ED08A319767C6ED /* FSMStateUtil.h in Headers */,
+				7C741A98578A32B370A4E1D3C79FEDB4 /* LocalConnection.h in Headers */,
+				4D1EB697AE923E0FB3E0B25543879F87 /* PingFoundation.h in Headers */,
+				C488A4634738E460A3E06B9E456821A6 /* PingHelper.h in Headers */,
+				64B8937E2CD40D0660F8B2673A3718F1 /* ReachState.h in Headers */,
+				DEB4D73055A16C54CD856E1E1948257B /* ReachStateLoading.h in Headers */,
+				C808D98ED1A8D6C323320F5B30D9F7E7 /* ReachStateUnloaded.h in Headers */,
+				C18E8FCF51BA9B981471F07A075BC315 /* ReachStateUnReachable.h in Headers */,
+				DF5F9B3302EB9FD4394D8CBA35B2A4E3 /* ReachStateWIFI.h in Headers */,
+				27342FEB86FF05499C9FA2312E624815 /* ReachStateWWAN.h in Headers */,
+				F61B91E8167F7ADBE23FA9F67C6D11F5 /* RealReachability.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5B112C9F221EB26F98EB46344F993417 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6AD6646978CE24564457401116EFC317 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13838E8D8DF427C962D3B9821112D0FD /* LLNetworkMonitor.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		8A4AD2049C8BDD258A218AD04FEFB905 /* LLNetworkMonitor */ = {
+		0D3C03F1557B1809D0915A659A7B6AF0 /* Pods-LLNetworkMonitor */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 58B0C93E9FD668841E5CA1620B9689CF /* Build configuration list for PBXNativeTarget "LLNetworkMonitor" */;
+			buildConfigurationList = 5FA22C48D9C25C8E6ED85A14F9DE23E9 /* Build configuration list for PBXNativeTarget "Pods-LLNetworkMonitor" */;
 			buildPhases = (
-				F42938091670B685288638A6085103EB /* Sources */,
-				32A2BAC4847608634479DBFE309760ED /* Frameworks */,
-				A89E332FB1CC766655A1EF96D6848578 /* Headers */,
+				5B112C9F221EB26F98EB46344F993417 /* Headers */,
+				748731328913C02E1FE5D84B85F1447F /* Sources */,
+				42494189DFA0D0AFF74C0A54F8787B0E /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-			);
-			name = LLNetworkMonitor;
-			productName = LLNetworkMonitor;
-			productReference = EA1186BBA59BD936BF14C395D12A5542 /* libLLNetworkMonitor.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-		A8E1FD260E3D78722B32D940C4D4B04F /* Pods-LLNetworkMonitor */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = CD1B09643205528C7A304FE10FF244DB /* Build configuration list for PBXNativeTarget "Pods-LLNetworkMonitor" */;
-			buildPhases = (
-				54BBDECEE3FD753105DD298A363C57DE /* Sources */,
-				7FBE18C7D24B4ACF7ABC700C1C334653 /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				5144E1E03B403D5CE253CAD1FC5928BD /* PBXTargetDependency */,
+				E4855E6431A7E0AB2F408A1677EB34A6 /* PBXTargetDependency */,
+				5FBA8D4246B3E063F3AE1158D37F2E13 /* PBXTargetDependency */,
 			);
 			name = "Pods-LLNetworkMonitor";
 			productName = "Pods-LLNetworkMonitor";
-			productReference = 1B21E532D6BAAB0116C44BC7A064A706 /* libPods-LLNetworkMonitor.a */;
+			productReference = BE2AFA4A4768E56C7316B85DFA49B09D /* libPods-LLNetworkMonitor.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		60B1886825C62A64A852CC4CE7588E55 /* RealReachability */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 36CFF6AFAEDB1186ABAD79617C151FD1 /* Build configuration list for PBXNativeTarget "RealReachability" */;
+			buildPhases = (
+				09BB32775A57762C47F3FCAFFFECC4EE /* Headers */,
+				2492B9BFDFB6D8AA301290B3B509CC3D /* Sources */,
+				3E2F64F46995DDED42B4EF0863B978E2 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RealReachability;
+			productName = RealReachability;
+			productReference = 3355D7D263E6AB9C3BC6A5864F42732D /* libRealReachability.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		8CB26B86F815B21A08176E7DCEA858B8 /* LLNetworkMonitor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A03E8F9E892D96989C933DCB5EEBD73E /* Build configuration list for PBXNativeTarget "LLNetworkMonitor" */;
+			buildPhases = (
+				6AD6646978CE24564457401116EFC317 /* Headers */,
+				9D65D989066531A605A9D887FC2C884B /* Sources */,
+				FBEEAAB7371EE665D0EFEA02DAE68A14 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BD1B21154EC1D833BB43019A0C624785 /* PBXTargetDependency */,
+			);
+			name = LLNetworkMonitor;
+			productName = LLNetworkMonitor;
+			productReference = C0A0CF4874F9B5917A8C9118F58A4665 /* libLLNetworkMonitor.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -204,68 +398,139 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 3473DA5DC35F32B8093B70ADA653AB13 /* Products */;
+			productRefGroup = C3A128E64D93B733BE7A38CBC0FD016C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8A4AD2049C8BDD258A218AD04FEFB905 /* LLNetworkMonitor */,
-				A8E1FD260E3D78722B32D940C4D4B04F /* Pods-LLNetworkMonitor */,
+				8CB26B86F815B21A08176E7DCEA858B8 /* LLNetworkMonitor */,
+				0D3C03F1557B1809D0915A659A7B6AF0 /* Pods-LLNetworkMonitor */,
+				60B1886825C62A64A852CC4CE7588E55 /* RealReachability */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		54BBDECEE3FD753105DD298A363C57DE /* Sources */ = {
+		2492B9BFDFB6D8AA301290B3B509CC3D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				940ABA43E06FEDA20F9EF5EA0FDAA8FC /* Pods-LLNetworkMonitor-dummy.m in Sources */,
+				3F055CA9B27BDB723CF0BC797926D7FA /* FSMEngine.m in Sources */,
+				EBAFCA457414FB5B42C87D3C17C732F5 /* FSMStateUtil.m in Sources */,
+				185281D411AF31B0ADB92ABF3F63A3D0 /* LocalConnection.m in Sources */,
+				8C2F25D44C2E5AF9D3EAB6417907EFEE /* PingFoundation.m in Sources */,
+				D97EDBE9ED660A558A51D3098E2FE0AF /* PingHelper.m in Sources */,
+				54BFF56A591549D7145CF46F458FFCF3 /* ReachState.m in Sources */,
+				76115AF5C7A8E7BC1E83651CB7476937 /* ReachStateLoading.m in Sources */,
+				7723372C37CBF8A65E48DCBC8A411D6D /* ReachStateUnloaded.m in Sources */,
+				1A2D82223A4E80BD3C28CDDB38B05523 /* ReachStateUnReachable.m in Sources */,
+				1F7C889D10FF5821D60D8DAA8F2AC8B6 /* ReachStateWIFI.m in Sources */,
+				FDAFB9A78B0DBF2D7A4F216ECE939797 /* ReachStateWWAN.m in Sources */,
+				5559D00778C523C8AB8BB028C0B6FAFB /* RealReachability-dummy.m in Sources */,
+				CF9FB7F04E33D80778E7349E93C7C6F2 /* RealReachability.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F42938091670B685288638A6085103EB /* Sources */ = {
+		748731328913C02E1FE5D84B85F1447F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5E6B9D640B13072BAA60FDC91F4C038F /* LLNetworkMonitor-dummy.m in Sources */,
-				3CB6504718FFE028C31D681C6C66C839 /* LLNetworkMonitor.m in Sources */,
+				2C3E0264A51A30A39BED1D6B8FC79740 /* Pods-LLNetworkMonitor-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D65D989066531A605A9D887FC2C884B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				448F3686F949F02EC6CC293EA795973C /* LLNetworkMonitor-dummy.m in Sources */,
+				7E13C2211B55E9CBC08153EF45C03582 /* LLNetworkMonitor.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		5144E1E03B403D5CE253CAD1FC5928BD /* PBXTargetDependency */ = {
+		5FBA8D4246B3E063F3AE1158D37F2E13 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = RealReachability;
+			target = 60B1886825C62A64A852CC4CE7588E55 /* RealReachability */;
+			targetProxy = 2BFF7AED77DE48B1E8B9A92EB43BEE6E /* PBXContainerItemProxy */;
+		};
+		BD1B21154EC1D833BB43019A0C624785 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = RealReachability;
+			target = 60B1886825C62A64A852CC4CE7588E55 /* RealReachability */;
+			targetProxy = 0A6AAE63A301086FA2FEC0669239FCDF /* PBXContainerItemProxy */;
+		};
+		E4855E6431A7E0AB2F408A1677EB34A6 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = LLNetworkMonitor;
-			target = 8A4AD2049C8BDD258A218AD04FEFB905 /* LLNetworkMonitor */;
-			targetProxy = BDFC285DBEA3C7928784A912903321FD /* PBXContainerItemProxy */;
+			target = 8CB26B86F815B21A08176E7DCEA858B8 /* LLNetworkMonitor */;
+			targetProxy = E667AA57199CD1E9C82B678836922C34 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		2B04E31BAEC984D9EAB8399C01F35157 /* Debug */ = {
+		3A84D6B156D837CFAE10AF16A4B2E0D6 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4E344541EAE483BB56AE77F190660ADC /* LLNetworkMonitor.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				GCC_PREFIX_HEADER = "Target Support Files/LLNetworkMonitor/LLNetworkMonitor-prefix.pch";
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
 			};
-			name = Debug;
+			name = Release;
 		};
-		3D6F87559EA9146DA94F3D14B31DE9F6 /* Release */ = {
+		53FFF75A731FA231DBCD24A58A131442 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4E344541EAE483BB56AE77F190660ADC /* LLNetworkMonitor.xcconfig */;
 			buildSettings = {
@@ -287,9 +552,31 @@
 			};
 			name = Release;
 		};
-		729B33995E431D4E053F13B1315DF455 /* Release */ = {
+		57281EC339699D72F5D0A1E49DA8E6FE /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 34F8493213966E4C16F7E764323D0AA8 /* Pods-LLNetworkMonitor.release.xcconfig */;
+			baseConfigurationReference = 9BE2F39CEED532EAA0F6337696F4E3B3 /* RealReachability.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/RealReachability/RealReachability-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8E0C95F37FDFF25433258A92E64EF17A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 89577F8D00F94AC30C4A9BDE210DD829 /* Pods-LLNetworkMonitor.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -304,11 +591,10 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 			};
-			name = Release;
+			name = Debug;
 		};
-		C3E37FB098AE76440E29106ADBF00CEB /* Debug */ = {
+		A7E55FE1467BE28AA12299266E145C1F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -361,7 +647,8 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				MTL_ENABLE_DEBUG_INFO = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
@@ -371,67 +658,30 @@
 			};
 			name = Debug;
 		};
-		DA03565BE765DB55C6448FB363A44481 /* Release */ = {
+		DC6601C59B0E9C34E9C47B35BD567719 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4E344541EAE483BB56AE77F190660ADC /* LLNetworkMonitor.xcconfig */;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGNING_REQUIRED = NO;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"POD_CONFIGURATION_RELEASE=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/LLNetworkMonitor/LLNetworkMonitor-prefix.pch";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
-				STRIP_INSTALLED_PRODUCT = NO;
-				SYMROOT = "${SRCROOT}/../build";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
-			name = Release;
+			name = Debug;
 		};
-		DB639E6A3E48C2E289C584988D2F14CB /* Debug */ = {
+		F5FB2721765CF323842057CCAEC158EA /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 89577F8D00F94AC30C4A9BDE210DD829 /* Pods-LLNetworkMonitor.debug.xcconfig */;
+			baseConfigurationReference = 34F8493213966E4C16F7E764323D0AA8 /* Pods-LLNetworkMonitor.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -446,6 +696,28 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FED569F337F318B5291E87B818968F8E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9BE2F39CEED532EAA0F6337696F4E3B3 /* RealReachability.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/RealReachability/RealReachability-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -455,26 +727,35 @@
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C3E37FB098AE76440E29106ADBF00CEB /* Debug */,
-				DA03565BE765DB55C6448FB363A44481 /* Release */,
+				A7E55FE1467BE28AA12299266E145C1F /* Debug */,
+				3A84D6B156D837CFAE10AF16A4B2E0D6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		58B0C93E9FD668841E5CA1620B9689CF /* Build configuration list for PBXNativeTarget "LLNetworkMonitor" */ = {
+		36CFF6AFAEDB1186ABAD79617C151FD1 /* Build configuration list for PBXNativeTarget "RealReachability" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2B04E31BAEC984D9EAB8399C01F35157 /* Debug */,
-				3D6F87559EA9146DA94F3D14B31DE9F6 /* Release */,
+				FED569F337F318B5291E87B818968F8E /* Debug */,
+				57281EC339699D72F5D0A1E49DA8E6FE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CD1B09643205528C7A304FE10FF244DB /* Build configuration list for PBXNativeTarget "Pods-LLNetworkMonitor" */ = {
+		5FA22C48D9C25C8E6ED85A14F9DE23E9 /* Build configuration list for PBXNativeTarget "Pods-LLNetworkMonitor" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DB639E6A3E48C2E289C584988D2F14CB /* Debug */,
-				729B33995E431D4E053F13B1315DF455 /* Release */,
+				8E0C95F37FDFF25433258A92E64EF17A /* Debug */,
+				F5FB2721765CF323842057CCAEC158EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A03E8F9E892D96989C933DCB5EEBD73E /* Build configuration list for PBXNativeTarget "LLNetworkMonitor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC6601C59B0E9C34E9C47B35BD567719 /* Debug */,
+				53FFF75A731FA231DBCD24A58A131442 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

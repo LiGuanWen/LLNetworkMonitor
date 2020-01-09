@@ -24,4 +24,5 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/LiGuanWen/LLNetworkMonitor.git", :tag => s.version}
   s.source_files = "LLNetworkMonitorClass/**/*.{h,m}"
 
+  s.dependency "RealReachability"
 end
